@@ -2,7 +2,7 @@ Grupo de Desarrollo: Devopstic
 
 Integrantes:
 
--Juan David Orozco
+-Juan David Orozco Quintero
 -Jhon Meza
 -Eduard Humanez
 -Flor Marien Salinas 
