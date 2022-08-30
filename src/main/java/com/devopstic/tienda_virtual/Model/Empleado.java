@@ -1,8 +1,5 @@
 package com.devopstic.tienda_virtual.Model;
 
-
-import net.bytebuddy.dynamic.loading.InjectionClassLoader;
-
 import javax.persistence.*;
 
 @Entity
