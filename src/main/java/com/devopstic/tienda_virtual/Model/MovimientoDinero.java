@@ -3,7 +3,7 @@ package com.devopstic.tienda_virtual.Model;
 import javax.persistence.*;
 
 @Entity
-@Table()
+@Table(name = "transacciones")
 public class MovimientoDinero {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
