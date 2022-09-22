@@ -5,7 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8b26801c-7ac1-4969-9a0f-62dd43887a19" name="Changes" comment="Ajuste en clase Empleado">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/devopstic/tienda_virtual/Interfaces/View_Empleado.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/devopstic/tienda_virtual/Repositories/View_Empleado.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/devopstic/tienda_virtual/Interfaces/View_Empresa.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/devopstic/tienda_virtual/Repositories/View_Empresa.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/devopstic/tienda_virtual/Interfaces/View_MovimientoDinero.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/devopstic/tienda_virtual/Repositories/View_MovimientoDinero.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/devopstic/tienda_virtual/InterfacesServices/ViewService_Empleado.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/devopstic/tienda_virtual/InterfacesServices/ViewService_Empresa.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/devopstic/tienda_virtual/InterfacesServices/ViewService_MovimientoDinero.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
