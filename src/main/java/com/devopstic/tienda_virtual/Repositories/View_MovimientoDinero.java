@@ -1,6 +1,5 @@
-package com.devopstic.tienda_virtual.Interfaces;
+package com.devopstic.tienda_virtual.Repositories;
 
-import com.devopstic.tienda_virtual.Model.Empresa;
 import com.devopstic.tienda_virtual.Model.MovimientoDinero;
 import org.springframework.data.jpa.repository.JpaRepository;
 

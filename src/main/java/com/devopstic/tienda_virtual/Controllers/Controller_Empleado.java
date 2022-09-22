@@ -1,9 +1,8 @@
 package com.devopstic.tienda_virtual.Controllers;
 
-import com.devopstic.tienda_virtual.Interfaces.View_Empleado;
+import com.devopstic.tienda_virtual.Repositories.View_Empleado;
 import com.devopstic.tienda_virtual.Model.Empleado;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.boot.context.properties.source.InvalidConfigurationPropertyValueException;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.server.ResponseStatusException;
