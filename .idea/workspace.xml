@@ -4,25 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8b26801c-7ac1-4969-9a0f-62dd43887a19" name="Changes" comment="Ajuste en clase Empleado">
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/devopstic/tienda_virtual/Interfaces/View_Empleado.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/devopstic/tienda_virtual/Repositories/View_Empleado.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/devopstic/tienda_virtual/Interfaces/View_Empresa.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/devopstic/tienda_virtual/Repositories/View_Empresa.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/devopstic/tienda_virtual/Interfaces/View_MovimientoDinero.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/devopstic/tienda_virtual/Repositories/View_MovimientoDinero.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/devopstic/tienda_virtual/InterfacesServices/ViewService_Empleado.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/devopstic/tienda_virtual/InterfacesServices/ViewService_Empresa.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/devopstic/tienda_virtual/InterfacesServices/ViewService_MovimientoDinero.java" beforeDir="false" />
-    </list>
+    <list default="true" id="8b26801c-7ac1-4969-9a0f-62dd43887a19" name="Changes" comment="Ajuste en clase Empleado" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_BRANCH_BY_REPOSITORY">
-      <map>
-        <entry key="$PROJECT_DIR$" value="main" />
-      </map>
-    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MarkdownSettingsMigration">
@@ -41,14 +29,12 @@
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
-    <option name="showVisibilityIcons" value="true" />
   </component>
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/Adminest/Downloads/MATERIAL DE ESTUDIO/CICLO 3/Programación/Ejercicios_Spring_Boot/Web_Empresa/Web_Empresa&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.customizations&quot;
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Adminest/Downloads/MATERIAL DE ESTUDIO/CICLO 3/Programación/Ejercicios_Spring_Boot/Web_Empresa/Web_Empresa&quot;
   }
 }</component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -75,19 +61,7 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State>
-              <option name="FILTERS">
-                <map>
-                  <entry key="branch">
-                    <value>
-                      <list>
-                        <option value="origin/Development" />
-                      </list>
-                    </value>
-                  </entry>
-                </map>
-              </option>
-            </State>
+            <State />
           </value>
         </entry>
       </map>

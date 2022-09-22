@@ -1,0 +1,84 @@
+{
+	"variables": [],
+	"info": {
+		"name": "tienda virtual",
+		"_postman_id": "42a4110e-d1a3-d4d4-f42c-54418a105d72",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "consultar empresa",
+			"request": {
+				"url": "http://localhost:9090/enterprises",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "crear empresa",
+			"request": {
+				"url": "http://localhost:9090/enterprises",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t \"nombre\": \"tienda virtual2\",\n        \"nit\": \"9000000\",\n        \"telefono\": \"5468976\",\n        \"direccion\": \"calle 27 # 2\"\n\t\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "consultar empresa por id",
+			"request": {
+				"url": "http://localhost:9090/enterprises/2",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "actualizar empresa",
+			"request": {
+				"url": "http://localhost:9090/enterprises/1",
+				"method": "PATCH",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\t \"nombre\": \"tienda virtual3\",\n        \"nit\": \"8000000\",\n        \"telefono\": \"546897699\",\n        \"direccion\": \"calle 26 # 2\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "eliminar empresa",
+			"request": {
+				"url": "http://localhost:9090/enterprises/1",
+				"method": "DELETE",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}
