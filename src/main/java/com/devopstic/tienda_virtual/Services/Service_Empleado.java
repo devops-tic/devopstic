@@ -10,7 +10,7 @@ import java.util.Optional;
 
 public class Service_Empleado {
     @Autowired
-    View_Empleado usuario;
+    private View_Empleado usuario;
     public List<Empleado> ListarUsuarios(){
         List<Empleado> usuarios=new ArrayList<Empleado>();
         usuarios.addAll(usuario.findAll());
