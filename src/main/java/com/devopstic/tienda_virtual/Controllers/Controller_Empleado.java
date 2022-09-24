@@ -1,6 +1,6 @@
 package com.devopstic.tienda_virtual.Controllers;
 
-import com.devopstic.tienda_virtual.Repositories.View_Empleado;
+
 import com.devopstic.tienda_virtual.Model.Empleado;
 import com.devopstic.tienda_virtual.Services.Service_Empleado;
 import org.springframework.beans.factory.annotation.Autowired;

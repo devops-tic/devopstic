@@ -4,8 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8b26801c-7ac1-4969-9a0f-62dd43887a19" name="Changes" comment="Ajuste en carpetas y archivos">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="8b26801c-7ac1-4969-9a0f-62dd43887a19" name="Changes" comment="Se crea archivo Procfile">
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/devopstic/tienda_virtual/Controllers/Controller_Empleado.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/devopstic/tienda_virtual/Controllers/Controller_Empleado.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -84,7 +84,14 @@
       <option name="project" value="LOCAL" />
       <updated>1663978933496</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Se crea archivo Procfile">
+      <created>1663980036984</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1663980036984</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -103,6 +110,7 @@
     <MESSAGE value="Se realiza creación de los servicios" />
     <MESSAGE value="Ajuste en properties" />
     <MESSAGE value="Ajuste en carpetas y archivos" />
-    <option name="LAST_COMMIT_MESSAGE" value="Ajuste en carpetas y archivos" />
+    <MESSAGE value="Se crea archivo Procfile" />
+    <option name="LAST_COMMIT_MESSAGE" value="Se crea archivo Procfile" />
   </component>
 </project>
