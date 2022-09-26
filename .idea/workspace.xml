@@ -4,18 +4,26 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8b26801c-7ac1-4969-9a0f-62dd43887a19" name="Changes" comment="Se realiza modificación">
+    <list default="true" id="8b26801c-7ac1-4969-9a0f-62dd43887a19" name="Changes" comment="Se realiza actualización de clases">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/devopstic/tienda_virtual/Controllers/Controller_Login.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/devopstic/tienda_virtual/Repositories/View_Login.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/devopstic/tienda_virtual/Controllers/Controller_Empleado.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/devopstic/tienda_virtual/Controllers/Controller_Empleado.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/devopstic/tienda_virtual/Controllers/Controller_Empresa.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/devopstic/tienda_virtual/Controllers/Controller_Empresa.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/devopstic/tienda_virtual/Controllers/Controller_MovimientoDinero.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/devopstic/tienda_virtual/Controllers/Controller_MovimientoDinero.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/devopstic/tienda_virtual/Services/Service_Empleado.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/devopstic/tienda_virtual/Services/Service_Empleado.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/devopstic/tienda_virtual/Services/Service_Empresa.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/devopstic/tienda_virtual/Services/Service_Empresa.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/devopstic/tienda_virtual/Services/Service_MovimientoDinero.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/devopstic/tienda_virtual/Services/Service_MovimientoDinero.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+        <option value="Interface" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -37,14 +45,14 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "last_opened_file_path": "C:/Users/Adminest/Downloads/MATERIAL DE ESTUDIO/CICLO 3/Programación/Ejercicios_Spring_Boot/2. Thymeleaf/thymeleaf-springboot-tutorial",
-    "settings.editor.selected.configurable": "MavenSettings"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Adminest/Downloads/MATERIAL DE ESTUDIO/CICLO 3/Programación/Ejercicios_Spring_Boot/2. Thymeleaf/thymeleaf-springboot-tutorial&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;MavenSettings&quot;
   }
-}]]></component>
+}</component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -103,7 +111,14 @@
       <option name="project" value="LOCAL" />
       <updated>1663980210855</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Se realiza actualización de clases">
+      <created>1663982950287</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1663982950287</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -124,6 +139,7 @@
     <MESSAGE value="Ajuste en carpetas y archivos" />
     <MESSAGE value="Se crea archivo Procfile" />
     <MESSAGE value="Se realiza modificación" />
-    <option name="LAST_COMMIT_MESSAGE" value="Se realiza modificación" />
+    <MESSAGE value="Se realiza actualización de clases" />
+    <option name="LAST_COMMIT_MESSAGE" value="Se realiza actualización de clases" />
   </component>
 </project>

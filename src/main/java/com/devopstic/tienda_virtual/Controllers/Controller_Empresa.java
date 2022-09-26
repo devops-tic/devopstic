@@ -42,7 +42,7 @@ public class Controller_Empresa {
     @DeleteMapping("/{id}")
     public String eliminarEmpresa(@PathVariable Integer id){
         empresa.delete(id);
-        return "la empresa con el id : " +id+ " fue eliminada";
+        return "La empresa con el Id : " +id+ " fue eliminada";
     }
 
 }

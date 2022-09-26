@@ -42,7 +42,7 @@ public class Controller_Empleado {
     @DeleteMapping("/{id}")
     public String eliminarUsuario(@PathVariable Integer id){
         usuario.delete(id);
-        return "el usuario con el id : " +id+ " fue eliminado";
+        return "El usuario con el Id : " +id+ " fue eliminado";
     }
 
 

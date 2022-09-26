@@ -41,6 +41,6 @@ public class Controller_MovimientoDinero {
     @DeleteMapping("/{id}")
     public String eliminarTransaccion(@PathVariable Integer id){
         transacion.delete(id);
-        return "la transaccion con el id : " +id+ " fue eliminada";
+        return "La transaccion con el Id : " +id+ " fue eliminada";
     }
 }
