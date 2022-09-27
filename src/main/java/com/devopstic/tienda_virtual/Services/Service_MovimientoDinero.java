@@ -20,12 +20,14 @@ public class Service_MovimientoDinero {
         return movimientos;
     }
     public Optional<MovimientoDinero> consultarTransaccionPorId(int id) {
+
         return transaccion.findById(id);
     }
     public MovimientoDinero guardarYActualizarTransaccion(MovimientoDinero movimientoDinero) {
         return transaccion.save(movimientoDinero);
     }
     public void delete(int id) {
+
         transaccion.deleteById(id);
     }
 

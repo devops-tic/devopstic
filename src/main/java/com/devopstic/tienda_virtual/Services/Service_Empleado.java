@@ -14,7 +14,7 @@ public class Service_Empleado {
     @Autowired
     View_Empleado usuario;
     public List<Empleado> ListarUsuarios(){
-        List<Empleado> usuarios= new ArrayList<>();
+        List<Empleado> usuarios= new ArrayList<Empleado>();
         usuarios.addAll(usuario.findAll());
         return usuarios;
     }
@@ -22,9 +22,11 @@ public class Service_Empleado {
         return usuario.findById(id);
     }
     public Empleado guardarYActualizaUsuario(Empleado empleado) {
+
         return usuario.save(empleado);
     }
     public void delete(int id) {
+
         usuario.deleteById(id);
     }
 

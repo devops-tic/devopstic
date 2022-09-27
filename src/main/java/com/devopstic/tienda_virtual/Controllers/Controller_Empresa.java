@@ -5,21 +5,25 @@ import com.devopstic.tienda_virtual.Model.Empresa;
 import com.devopstic.tienda_virtual.Services.Service_Empresa;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.server.ResponseStatusException;
 
 import java.util.List;
 import java.util.Optional;
 
-@RestController
-@RequestMapping(path = "/enterprises")
+@Controller
 public class Controller_Empresa {
     @Autowired
-    Service_Empresa empresa;
-    @GetMapping
-    public List <Empresa> getempresas(){
-        return empresa.ListarEmpresas();
+    Service_Empresa serviceEmpresa;
+    @GetMapping("/empresas")
+    public String ListarEmpresas(Model Empresa) {
+        serviceEmpresa.ListarEmpresas();
+        Empresa.addAttribute("mostrarEmpresas", serviceEmpresa.ListarEmpresas());
+        return "empresas";
     }
+    /**
     @PostMapping
     public Empresa crearEmpresa (@RequestBody Empresa body){
         return empresa.guardarYActualizarEmpresa(body);
@@ -44,5 +48,5 @@ public class Controller_Empresa {
         empresa.delete(id);
         return "La empresa con el Id : " +id+ " fue eliminada";
     }
-
+     **/
 }

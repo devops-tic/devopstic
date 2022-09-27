@@ -4,20 +4,24 @@ import com.devopstic.tienda_virtual.Model.Empleado;
 import com.devopstic.tienda_virtual.Services.Service_Empleado;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.server.ResponseStatusException;
 import java.util.List;
 import java.util.Optional;
 
-@RestController
-@RequestMapping(path = "/user")
+@Controller
 public class Controller_Empleado{
     @Autowired
     Service_Empleado service_empleado;
-    @GetMapping
-    public List<Empleado> ListarUsuarios(){
-        return service_empleado.ListarUsuarios();
+    @GetMapping("/employes")
+    public String ListarUsuarios(Model model){
+        service_empleado.ListarUsuarios();
+        model.addAttribute("empleados", service_empleado.ListarUsuarios());
+        return "employes";
     }
+    /**
     @PostMapping
     public Empleado guardarYActualizaUsuario (@RequestBody Empleado empleado){
         return service_empleado.guardarYActualizaUsuario(empleado);
@@ -42,6 +46,6 @@ public class Controller_Empleado{
         service_empleado.delete(id);
         return "El usuario con el Id : " +id+ " fue eliminado";
     }
-
+     **/
 
 }

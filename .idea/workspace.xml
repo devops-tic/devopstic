@@ -4,13 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8b26801c-7ac1-4969-9a0f-62dd43887a19" name="Changes" comment="Creación de controladores y repositorios para el login.">
+    <list default="true" id="8b26801c-7ac1-4969-9a0f-62dd43887a19" name="Changes" comment="Ajustes en clases para creación de Login.">
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/employes.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/empresas.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/home.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/devopstic/tienda_virtual/Controllers/Controller_Empleado.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/devopstic/tienda_virtual/Controllers/Controller_Empleado.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/devopstic/tienda_virtual/Repositories/View_Empleado.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/devopstic/tienda_virtual/Repositories/View_Empleado.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/devopstic/tienda_virtual/Repositories/View_Empresa.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/devopstic/tienda_virtual/Repositories/View_Empresa.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/devopstic/tienda_virtual/Repositories/View_Login.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/devopstic/tienda_virtual/Repositories/View_Login.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/devopstic/tienda_virtual/Repositories/View_MovimientoDinero.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/devopstic/tienda_virtual/Repositories/View_MovimientoDinero.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/devopstic/tienda_virtual/Controllers/Controller_Empresa.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/devopstic/tienda_virtual/Controllers/Controller_Empresa.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/devopstic/tienda_virtual/Controllers/Controller_Login.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/devopstic/tienda_virtual/Model/Empleado.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/devopstic/tienda_virtual/Model/Empleado.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/devopstic/tienda_virtual/Repositories/View_Login.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/devopstic/tienda_virtual/Services/Service_Empleado.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/devopstic/tienda_virtual/Services/Service_Empleado.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/devopstic/tienda_virtual/Services/Service_Empresa.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/devopstic/tienda_virtual/Services/Service_Empresa.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/devopstic/tienda_virtual/Services/Service_MovimientoDinero.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/devopstic/tienda_virtual/Services/Service_MovimientoDinero.java" afterDir="false" />
@@ -23,13 +27,17 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Interface" />
+        <option value="Class" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/src/main/java/com/devopstic/tienda_virtual/Controllers/Controller_Empleado.java" root0="SKIP_INSPECTION" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -53,6 +61,7 @@
   </component>
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;last_opened_file_path&quot;: &quot;C:/Users/Adminest/Downloads/MATERIAL DE ESTUDIO/CICLO 3/Programación/Ejercicios_Spring_Boot/2. Thymeleaf/thymeleaf-springboot-tutorial&quot;,
@@ -131,7 +140,14 @@
       <option name="project" value="LOCAL" />
       <updated>1664225506911</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Ajustes en clases para creación de Login.">
+      <created>1664229137784</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1664229137784</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -154,6 +170,7 @@
     <MESSAGE value="Se realiza modificación" />
     <MESSAGE value="Se realiza actualización de clases" />
     <MESSAGE value="Creación de controladores y repositorios para el login." />
-    <option name="LAST_COMMIT_MESSAGE" value="Creación de controladores y repositorios para el login." />
+    <MESSAGE value="Ajustes en clases para creación de Login." />
+    <option name="LAST_COMMIT_MESSAGE" value="Ajustes en clases para creación de Login." />
   </component>
 </project>

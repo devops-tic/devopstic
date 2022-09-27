@@ -23,9 +23,11 @@ public class Service_Empresa {
         return empresa.findById(id);
     }
     public Empresa guardarYActualizarEmpresa(Empresa empresas) {
+
         return empresa.save(empresas);
     }
     public void delete(int id) {
+
         empresa.deleteById(id);
     }
 

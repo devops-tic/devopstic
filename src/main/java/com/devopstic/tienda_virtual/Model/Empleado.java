@@ -12,18 +12,12 @@ public class Empleado {
       private int id;
       private String nombre;
       private String email;
+      private String password;
       private String empresa;
       private String rol;
 
       public Empleado() {
-      }
 
-      public Empleado(int id, String nombre, String email, String empresa, String rol) {
-            this.id = id;
-            this.nombre = nombre;
-            this.email = email;
-            this.empresa = empresa;
-            this.rol = rol;
       }
 
       public int getId() {
@@ -48,6 +42,14 @@ public class Empleado {
 
       public void setEmail(String email) {
             this.email = email;
+      }
+
+      public String getPassword() {
+            return password;
+      }
+
+      public void setPassword(String password) {
+            this.password = password;
       }
 
       public String getEmpresa() {
