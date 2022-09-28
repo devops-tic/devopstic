@@ -18,9 +18,9 @@ public class Controller_Empresa {
     @Autowired
     Service_Empresa serviceEmpresa;
     @GetMapping("/empresas")
-    public String ListarEmpresas(Model Empresa) {
+    public String ListarEmpresas(Model model) {
         serviceEmpresa.ListarEmpresas();
-        Empresa.addAttribute("mostrarEmpresas", serviceEmpresa.ListarEmpresas());
+        model.addAttribute("mostrarEmpresas", serviceEmpresa.ListarEmpresas());
         return "empresas";
     }
     /**

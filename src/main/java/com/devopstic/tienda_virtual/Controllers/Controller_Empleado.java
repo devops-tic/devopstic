@@ -15,13 +15,13 @@ import java.util.Optional;
 public class Controller_Empleado{
     @Autowired
     Service_Empleado service_empleado;
-    @GetMapping("/employes")
+    @GetMapping("/empleados")
     public String ListarUsuarios(Model model){
         service_empleado.ListarUsuarios();
-        model.addAttribute("empleados", service_empleado.ListarUsuarios());
-        return "employes";
+        model.addAttribute("mostrarEmpleados", service_empleado.ListarUsuarios());
+        return "empleados";
     }
-    /**
+
     @PostMapping
     public Empleado guardarYActualizaUsuario (@RequestBody Empleado empleado){
         return service_empleado.guardarYActualizaUsuario(empleado);
@@ -46,6 +46,5 @@ public class Controller_Empleado{
         service_empleado.delete(id);
         return "El usuario con el Id : " +id+ " fue eliminado";
     }
-     **/
 
 }
