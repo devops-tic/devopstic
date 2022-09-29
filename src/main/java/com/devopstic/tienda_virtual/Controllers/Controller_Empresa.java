@@ -40,7 +40,7 @@ public class Controller_Empresa {
         model.addAttribute("editarEmpresa",editEmpresa);
         return "actualizarEmpresa";
     }
-    @DeleteMapping("borrar/{id}")
+    @GetMapping("borrar/{id}")
     public String eliminarEmpresa(Model model, @PathVariable  int id){
         serviceEmpresa.delete(id);
         return "redirect:/empresas";

@@ -39,7 +39,7 @@ public class Controller_MovimientoDinero {
         model.addAttribute("editarTransaccion",editeTransaccion);
         return "actualizarTransaccion";
     }
-    @DeleteMapping("eliminarTransaccion/{id}")
+    @GetMapping("eliminarTransaccion/{id}")
     public String eliminarTransaccion(Model model, @PathVariable  int id){
         transaccion.delete(id);
         return "redirect:/transacciones";

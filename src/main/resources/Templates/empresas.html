@@ -7,9 +7,19 @@
 </head>
 <body>
 <div class="container mt-4">
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Empresas</a>
+        </div>
+    </nav>
     <table class="table">
         <thead>
-        <p>Listado de Empresas</p>
+        <th>ID</th>
+        <th>Nombre</th>
+        <th>NIT</th>
+        <th>Telefono</th>
+        <th>Direccion</th>
+
         </thead>
         <tbody>
         <tr th:each="empresa:${mostrarEmpresas}">
@@ -20,13 +30,14 @@
             <td th:text="${empresa.direccion}">${empresa.direccion}</td>
             <td>
                 <a th:href="@{/editarEmpresa/}+${empresa.id}" class="btn btn-warning">Editar</a>
-                <a th:onclick="borrar([[${empresa.id}]])" class="btn btn-danger">Eliminar</a>
+                <a th:href="@{/borrar/}+${empresa.id}"  class="btn btn-danger">Eliminar</a>
 
             </td>
         </tr>
         </tbody>
     </table>
-    <a th:href="@{/registroEmpresas}" class="btn btn-dark">Registrar</a>
+    <a th:href="@{/registroEmpresas}" class="btn btn-success">Registrar</a>
+    <a th:href="@{/}" class="btn btn-primary">Volver</a>
 </div>
 
 <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>

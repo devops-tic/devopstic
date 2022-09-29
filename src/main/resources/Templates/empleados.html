@@ -7,9 +7,19 @@
 </head>
 <body>
 <div class="container mt-4">
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Empleados Registrados</a>
+        </div>
+    </nav>
     <table class="table">
         <thead>
-        <p>Listado de Empleados</p>
+        <th>ID</th>
+        <th>Nombre Empleado</th>
+        <th>E-mail</th>
+        <th>Password</th>
+        <th>Empresa</th>
+        <th>Rol</th>
         </thead>
         <tr th:each="empleado:${mostrarEmpleados}">
             <td th:text="${empleado.id}">${empleado.id}</td>
@@ -20,12 +30,15 @@
             <td th:text="${empleado.rol}">${empleado.rol}</td>
             <td>
                 <a th:href="@{/editar/}+${empleado.id}" class="btn btn-warning">Editar</a>
-                <a th:onclick="eliminar([[${empleado.id}]])" class="btn btn-danger">Eliminar</a>
+                <a th:href="@{/eliminar/}+${empleado.id}" class="btn btn-danger">Eliminar</a>
+
+
 
             </td>
         </tr>
     </table>
     <a th:href="@{/registroEmpleados}" class="btn btn-success">Registrar</a>
+    <a th:href="@{/}" class="btn btn-primary">Volver</a>
 </div>
 
 <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>

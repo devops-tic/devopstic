@@ -39,9 +39,10 @@ public class Controller_Empleado{
         return "actualizarEmpleado";
     }
 
-    @DeleteMapping("eliminar/{id}")
-    public String eliminarUsuario(Model model, @PathVariable  int id){
+    @GetMapping ("eliminar/{id}")
+    public String eliminarUsuario(Model model,@PathVariable int id){
         service_empleado.delete(id);
+
         return "redirect:/empleados";
     }
 

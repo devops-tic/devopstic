@@ -7,9 +7,17 @@
 </head>
 <body>
 <div class="container mt-4">
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Movimientos de Dinero</a>
+        </div>
+    </nav>
     <table class="table">
         <thead>
-        <p>Listado de Empresas</p>
+        <th>ID</th>
+        <th>Concepto</th>
+        <th>Monto</th>
+        <th>Usuario</th>
         </thead>
         <tbody>
         <tr th:each="transacciones:${mostrarTransaccion}">
@@ -19,13 +27,14 @@
             <td th:text="${transacciones.usuario}">${transacciones.usuario}</td>
             <td>
                 <a th:href="@{/editarTransaccion/}+${transacciones.id}" class="btn btn-warning">Editar</a>
-                <a th:onclick="eliminarTransaccion([[${transacciones.id}]])" class="btn btn-danger">Eliminar</a>
+                <a th:href="@{/eliminarTransaccion/}+${transacciones.id}" class="btn btn-danger">Eliminar</a>
 
             </td>
         </tr>
         </tbody>
     </table>
     <a th:href="@{/registroTransacciones}" class="btn btn-dark">Registrar</a>
+    <a th:href="@{/}" class="btn btn-primary">Volver</a>
 </div>
 
 <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
