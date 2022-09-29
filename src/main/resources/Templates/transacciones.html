@@ -12,21 +12,20 @@
         <p>Listado de Empresas</p>
         </thead>
         <tbody>
-        <tr th:each="empresa:${mostrarEmpresas}">
-            <td th:text="${empresa.id}">${empresa.id}</td>
-            <td th:text="${empresa.nombre}">${empresa.nombre}</td>
-            <td th:text="${empresa.nit}">${empresa.nit}</td>
-            <td th:text="${empresa.telefono}">${empresa.telefono}</td>
-            <td th:text="${empresa.direccion}">${empresa.direccion}</td>
+        <tr th:each="transacciones:${mostrarTransaccion}">
+            <td th:text="${transacciones.id}">${transacciones.id}</td>
+            <td th:text="${transacciones.concepto}">${transacciones.concepto}</td>
+            <td th:text="${transacciones.monto}">${transacciones.monto}</td>
+            <td th:text="${transacciones.usuario}">${transacciones.usuario}</td>
             <td>
-                <a th:href="@{/editarEmpresa/}+${empresa.id}" class="btn btn-warning">Editar</a>
-                <a th:onclick="borrar([[${empresa.id}]])" class="btn btn-danger">Eliminar</a>
+                <a th:href="@{/editarTransaccion/}+${transacciones.id}" class="btn btn-warning">Editar</a>
+                <a th:onclick="eliminarTransaccion([[${transacciones.id}]])" class="btn btn-danger">Eliminar</a>
 
             </td>
         </tr>
         </tbody>
     </table>
-    <a th:href="@{/registroEmpresas}" class="btn btn-dark">Registrar</a>
+    <a th:href="@{/registroTransacciones}" class="btn btn-dark">Registrar</a>
 </div>
 
 <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>

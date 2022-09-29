@@ -1,46 +1,48 @@
 package com.devopstic.tienda_virtual.Controllers;
 
-import com.devopstic.tienda_virtual.Repositories.View_MovimientoDinero;
 import com.devopstic.tienda_virtual.Model.MovimientoDinero;
 import com.devopstic.tienda_virtual.Services.Service_MovimientoDinero;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.http.HttpStatus;
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
-import org.springframework.web.server.ResponseStatusException;
 
-import java.util.List;
 import java.util.Optional;
 
-@RestController
-@RequestMapping(path = "/enterprises/movements")
+@Controller
+
 public class Controller_MovimientoDinero {
     @Autowired
-    Service_MovimientoDinero transacion;
-    @GetMapping
-    public List<MovimientoDinero> gettransaccion(){
-        return transacion.ListarTransacciones();
-    }
-    @PostMapping
-    public MovimientoDinero crearTrnsaccion (@RequestBody MovimientoDinero body){
-        return transacion.guardarYActualizarTransaccion(body);
-    }
-    @GetMapping("/{id}")
-    public Optional<MovimientoDinero> cosultarTransaccionPorid(@PathVariable Integer id){
-        return transacion.consultarTransaccionPorId(id);
-    }
-    @PatchMapping("/{id}")
-    public MovimientoDinero actualizarTransaccion(@RequestBody MovimientoDinero body, @PathVariable Integer id){
-        MovimientoDinero movimiento= transacion.consultarTransaccionPorId(id)
-                .orElseThrow(() -> new ResponseStatusException(HttpStatus.NOT_FOUND,"transaccion no encontrada :: "+id+"id no encontrado"));
+    Service_MovimientoDinero transaccion;
+    @GetMapping("/transacciones")
 
-        movimiento.setConcepto(body.getConcepto());
-        movimiento.setMonto(body.getMonto());
-        movimiento.setUsuario(body.getUsuario());
-        return transacion.guardarYActualizarTransaccion(movimiento);
+    public String ListarTransacciones(Model model) {
+        transaccion.ListarTransacciones();
+        model.addAttribute("mostrarTransaccion", transaccion.ListarTransacciones());
+        return "transacciones";
+
+    } @GetMapping("/registroTransacciones")
+    public String verFormulario(Model model){
+        model.addAttribute("nuevaTransaccion", new MovimientoDinero());
+        return "registroTransacciones";
+
     }
-    @DeleteMapping("/{id}")
-    public String eliminarTransaccion(@PathVariable Integer id){
-        transacion.delete(id);
-        return "La transaccion con el Id : " +id+ " fue eliminada";
+    @PostMapping("/guardarTransaccion")
+    public String guardarTransaccion (MovimientoDinero movimientoDinero){
+        transaccion.guardarYActualizarTransaccion(movimientoDinero);
+
+        return "redirect:/transacciones";
     }
+    @GetMapping("editarTransaccion/{id}")
+    public String cosultarTransaccionPorId(@PathVariable int id, Model model ){
+        Optional<MovimientoDinero> editeTransaccion=transaccion.consultarTransaccionPorId(id);
+        model.addAttribute("editarTransaccion",editeTransaccion);
+        return "actualizarTransaccion";
+    }
+    @DeleteMapping("eliminarTransaccion/{id}")
+    public String eliminarTransaccion(Model model, @PathVariable  int id){
+        transaccion.delete(id);
+        return "redirect:/transacciones";
+    }
+
 }

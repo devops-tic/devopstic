@@ -15,7 +15,7 @@ function eliminar(id)
                 console.log(res);
             }
             });
-        swal("Poof! Su archivo ha sido eliminado!", {
+        swal(Su archivo ha sido eliminado!", {
           icon: "success",
         }).then(()=>{
             if(ok){

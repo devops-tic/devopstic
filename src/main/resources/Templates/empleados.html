@@ -2,7 +2,7 @@
 <html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
 <head>
     <meta charset="UTF-8">
-    <title>Empresas</title>
+    <title>Empleados</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
 </head>
 <body>
@@ -11,20 +11,21 @@
         <thead>
         <p>Listado de Empleados</p>
         </thead>
-        <tr th:each="empresa:${mostrarEmpleados}">
-            <td th:text="${empresa.id}">${mostrarEmpleados.id}</td>
-            <td th:text="${empresa.nombre}">${mostrarEmpleados.nombre}</td>
-            <td th:text="${empresa.email}">${mostrarEmpleados.email}</td>
-            <td th:text="${empresa.password}">${mostrarEmpleados.password}</td>
-            <td th:text="${empresa.empresa}">${mostrarEmpleados.empresa}</td>
-            <td th:text="${empresa.rol}">${mostrarEmpleados.rol}</td>
+        <tr th:each="empleado:${mostrarEmpleados}">
+            <td th:text="${empleado.id}">${empleado.id}</td>
+            <td th:text="${empleado.nombre}">${empleado.nombre}</td>
+            <td th:text="${empleado.email}">${empleado.email}</td>
+            <td th:text="${empleado.password}">${empleado.password}</td>
+            <td th:text="${empleado.empresa}">${empleado.empresa}</td>
+            <td th:text="${empleado.rol}">${empleado.rol}</td>
             <td>
-                <a th:href="@{/editar/}+${empresa.id}" class="btn btn-warning">Editar</a>
-                <a th:onclick="eliminar([[${empresa.id}]])" class="btn btn-danger">Eliminar</a>
+                <a th:href="@{/editar/}+${empleado.id}" class="btn btn-warning">Editar</a>
+                <a th:onclick="eliminar([[${empleado.id}]])" class="btn btn-danger">Eliminar</a>
 
             </td>
         </tr>
     </table>
+    <a th:href="@{/registroEmpleados}" class="btn btn-success">Registrar</a>
 </div>
 
 <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>

@@ -12,7 +12,7 @@ import java.util.Optional;
 @Service
 public class Service_Empleado {
     @Autowired
-    View_Empleado usuario;
+    private View_Empleado usuario;
     public List<Empleado> ListarUsuarios(){
         List<Empleado> usuarios= new ArrayList<Empleado>();
         usuarios.addAll(usuario.findAll());
@@ -21,9 +21,8 @@ public class Service_Empleado {
     public Optional<Empleado> cosultarUsuarioPorId(int id) {
         return usuario.findById(id);
     }
-    public Empleado guardarYActualizaUsuario(Empleado empleado) {
-
-        return usuario.save(empleado);
+    public void guardarYActualizaUsuario(Empleado empleado) {
+        usuario.save(empleado);
     }
     public void delete(int id) {
 
